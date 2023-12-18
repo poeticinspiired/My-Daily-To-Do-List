@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Muslim Themed To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Daily To-Do List</h1>
+        <div class="task-input">
+            <input type="text" id="newTask" placeholder="Add a new task">
+            <select id="taskCategory">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Shopping">Shopping</option>
+            </select>
+            <select id="taskPriority">
+                <option value="High">High</option>
+                <option value="Medium" selected>Medium</option>
+                <option value="Low">Low</option>
+            </select>
+            <input type="date" id="taskDate">
+            <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="taskList">
+            <li class="priority-medium"><span>🕌 Fajr - 6:20 AM to 7:00 AM</span></li>
+            <li class="priority-medium"><span>🌅 Sunrise - 7:46 AM</span></li>
+            <li class="priority-medium"><span>🕌 Dhuhr - 12:17 PM to 1:15 PM</span></li>
+            <li class="priority-medium"><span>🕌 Asr - 2:27 PM to 2:45 PM</span></li>
+            <li class="priority-medium"><span>🕌 Maghrib - 4:45 PM to 4:46 PM</span></li>
+            <li class="priority-medium"><span>🕌 Isha - 6:11 PM to 7:30 PM</span></li>
+            <li class="priority-high"><span>🕌 Jumuah - 1:30 PM</span></li>
+            <li class="priority-medium"><span>📚 Study Time - 2 hours daily</span></li>
+            <li class="priority-medium"><span>🏋️ Workout - 1 hour daily</span></li>
+            <li class="priority-medium"><span>👪 Family Time - Evening</span></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
